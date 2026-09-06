@@ -1,51 +1,34 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-tw">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>南院沙龍報到查詢</title>
+    <title>2026南院沙龍</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* 移除瀏覽器預設邊距，並隱藏滾動條（防止出現雙滾動條） */
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden; 
-            background-color: #ffffff;
+        .centered {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
-
-        /* 讓 iframe 絕對定位，並填滿整個視窗 */
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            border: none; /* 移除外框線 */
-            display: block;
-        }
-
-        .responsive-iframe-modern {
-          width: 100%;
-          height: auto; /* 確保高度依比例自適應 height: auto;*/
-          /* aspect-ratio: 16 / 9;  自動保持 16:9 比例，可依需求改為 4/3 或 1/1 */
-          /* max-width: 800px; 可選：限制最大寬度，避免在電腦大螢幕上過大 */
-          display: block;
-        }
-
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <!-- 部署 GAS 網頁應用程式網址 -->
-        <iframe 
-            class="responsive-iframe-modern" 
-            src="https://script.google.com/macros/s/AKfycbwBEhsEeBRgleph_rEdRrbxU67gK5k0D9_tbDCf9NR0Y3aIsicysCX1M8m9Dn-9BDqwbQ/exec" 
-            frameborder="0" allowfullscreen 
-            >
-        </iframe>
-    </div>
-
+<div class="container-fluid container-contact">
+<div class="row justify-content-center">
+        <h3 class="text-center">2026南院沙龍<br>報到查詢</h3>
+</div>
+    <div class="centered">
+    	<div class="row justify-content-center">
+            <div class="col-12 col-md-6 form-group" style="margin-top: 10px;">
+                <!-- 連結報到查詢GAS 2026/09/06-->
+                <a href="https://script.google.com/macros/s/AKfycbw9EGcalgHZD3BQO355p1LHP3ZnwirrWNdPQzTpGtCRa7ak1i4TR5T_kK31drmnQdw9LA/exec" class="btn btn-primary btn-lg">報到查詢</a>
+            </div>    	
+        </div>
+    </div>	
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</div>
 </body>
 </html>
