@@ -25,15 +25,27 @@
             border: none; /* 移除外框線 */
             display: block;
         }
+
+        .responsive-iframe-modern {
+          width: 100%;
+          height: auto; /* 確保高度依比例自適應 */
+          aspect-ratio: 16 / 9; /* 自動保持 16:9 比例，可依需求改為 4/3 或 1/1 */
+          max-width: 800px; /* 可選：限制最大寬度，避免在電腦大螢幕上過大 */
+          display: block;
+        }
+
     </style>
 </head>
 <body>
+    <iframe  src="https://youtube.com" ></iframe>
+
     <div class="iframe-container">
         <!-- 部署 GAS 網頁應用程式網址 -->
         <iframe 
+            class="responsive-iframe-modern" 
             src="https://script.google.com/macros/s/AKfycbwBEhsEeBRgleph_rEdRrbxU67gK5k0D9_tbDCf9NR0Y3aIsicysCX1M8m9Dn-9BDqwbQ/exec" 
-            width="600" 
-            height="400">
+            frameborder="0" allowfullscreen 
+            >
         </iframe>
     </div>
 
