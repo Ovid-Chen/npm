@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <title>南院沙龍報到查詢</title>
     <style>
-        body { text-align: center; font-family: sans-serif; }
-        .iframe-container { margin-top: 20px; }
-        iframe { border: 2px solid #ccc; border-radius: 8px; }
+        /* 移除瀏覽器預設邊距，並隱藏滾動條（防止出現雙滾動條） */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; 
+            background-color: #ffffff;
+        }
+
+        /* 讓 iframe 絕對定位，並填滿整個視窗 */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: none; /* 移除外框線 */
+            display: block;
+        }
     </style>
 </head>
 <body>
-
-    <h2>下方是從外部網站嵌入的 Google Apps Script 畫面：</h2>
-
     <div class="iframe-container">
         <!-- 部署 GAS 網頁應用程式網址 -->
         <iframe 
